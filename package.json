@@ -2,12 +2,15 @@
   "name": "onpoint-dev-task",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://ToropovaN.github.io/onpoint-dev-task",
   "license": "MIT",
   "scripts": {
     "dev": "eslint \"./src/**/*.{js,jsx,ts,tsx}\" --fix && SET NODE_ENV=development && npx webpack serve --mode development",
     "build": "npx webpack --mode production",
     "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
-    "lint:fix": "eslint \"./src/**/*.{js,jsx,ts,tsx}\" --fix"
+    "lint:fix": "eslint \"./src/**/*.{js,jsx,ts,tsx}\" --fix",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.10",
@@ -22,6 +25,7 @@
     "eslint-config-prettier": "^8.7.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "postcss-loader": "^7.0.1",

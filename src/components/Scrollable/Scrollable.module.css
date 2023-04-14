@@ -1,6 +1,7 @@
 .Scrollable {
   position: absolute;
   overflow-x: scroll;
+  overflow-y: hidden;
   width: 300%;
   height: 100%;
   display: flex;

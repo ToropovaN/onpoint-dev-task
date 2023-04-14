@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const buildPath = path.resolve(__dirname, "dist");
+const buildPath = path.resolve(__dirname, "build");
 const srcPath = path.resolve(__dirname, "src");
 
 const isProd = process.env.NODE_ENV === "production";
@@ -41,7 +41,7 @@ module.exports = {
   output: {
     path: buildPath,
     filename: "bundle.js",
-    publicPath: "/",
+    publicPath: "./",
   },
   plugins: [
     new HtmlWebpackPlugin({
