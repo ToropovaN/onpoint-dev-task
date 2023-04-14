@@ -1,0 +1,7 @@
+.Background {
+  transition: all 0.6s ease;
+}
+
+.dark {
+  opacity: 0.35;
+}

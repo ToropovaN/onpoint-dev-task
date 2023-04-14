@@ -1,0 +1,25 @@
+.Scrollable {
+  position: absolute;
+  overflow-x: scroll;
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+
+.Scrollable::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.Scrollable > * {
+  display: block;
+  position: relative;
+  margin-left: -1px;
+  width: calc(33.33% + 1px);
+  background-repeat: no-repeat;
+  transition: all 0.6s ease;
+}
+
+.firstChild > * {
+  width: 100%;
+}

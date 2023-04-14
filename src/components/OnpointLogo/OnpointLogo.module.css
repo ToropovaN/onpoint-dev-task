@@ -1,0 +1,7 @@
+.OnpointLogo {
+  position: absolute;
+  z-index: 100;
+  bottom: 8px;
+  left: 70px;
+  width: 56px;
+}

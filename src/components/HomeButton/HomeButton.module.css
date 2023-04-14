@@ -1,0 +1,6 @@
+.HomeButton {
+  z-index: 100;
+  position: absolute;
+  top: 25px;
+  left: 66px;
+}

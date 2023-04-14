@@ -1,0 +1,26 @@
+.Title {
+  z-index: 50;
+  height: 195px;
+  position: absolute;
+  font-family: "DINPro";
+  font-size: 26.5px;
+  letter-spacing: 2.1px;
+  line-height: 32.5px;
+  text-transform: uppercase;
+  margin: 0 43px 0 67px;
+}
+.Title > div {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+}
+
+.leftTitle {
+  width: 280px;
+}
+
+.centralTitle {
+  left: 284px;
+  width: 630px;
+}

@@ -1,0 +1,82 @@
+:root {
+  --prtclOpasity: 0;
+  --prtclScale: 0;
+  --prtclTime: 0s;
+}
+
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.particles > * {
+  position: absolute;
+}
+
+.animated > * {
+  animation: particleAnim1 var(--prtclTime) ease;
+}
+
+.particles > img:nth-child(1) {
+  --prtclOpasity: 1;
+  --prtclScale: 1;
+  --prtclTime: 1.5s;
+  left: 366px;
+  top: 96px;
+}
+.particles > img:nth-child(2) {
+  --prtclOpasity: 0.7;
+  --prtclScale: 0.65;
+  --prtclTime: 1.4s;
+  opacity: 0.7;
+  transform: scale(0.65);
+  mix-blend-mode: multiply;
+  left: 406px;
+  top: 8px;
+}
+.particles > img:nth-child(3) {
+  --prtclOpasity: 0.5;
+  --prtclScale: 0.36;
+  --prtclTime: 2.1s;
+  opacity: 0.5;
+  transform: scale(0.36);
+  mix-blend-mode: multiply;
+  left: 386px;
+  top: -85px;
+}
+.particles > img:nth-child(4) {
+  --prtclOpasity: 0.4;
+  --prtclScale: 0.64;
+  --prtclTime: 2.2s;
+  opacity: 0.4;
+  transform: scale(0.64);
+  mix-blend-mode: multiply;
+  left: 706px;
+  bottom: -44px;
+}
+.particles > img:nth-child(5) {
+  --prtclOpasity: 0.5;
+  --prtclScale: 0.27;
+  --prtclTime: 1.8s;
+  opacity: 0.5;
+  transform: scale(0.27);
+  mix-blend-mode: multiply;
+  filter: blur(6px);
+  left: 522px;
+  bottom: -62px;
+}
+
+@keyframes particleAnim1 {
+  0% {
+    opacity: 0;
+    transform: scale(var(--prtclScale)) translate(10%, 10%);
+  }
+  30% {
+    opacity: 0;
+    transform: scale(var(--prtclScale)) translate(10%, 10%);
+  }
+  100% {
+    opacity: var(--prtclOpasity);
+    transform: scale(var(--prtclScale));
+  }
+}

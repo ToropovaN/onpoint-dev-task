@@ -1,0 +1,39 @@
+.Button {
+  font-family: "DINPro";
+  font-size: 27px;
+  letter-spacing: 0.9px;
+  line-height: 30px;
+  display: inline-flex;
+  align-items: center;
+  height: 80px;
+  width: auto;
+  border-radius: 40px;
+  padding: 0 18px;
+  background-color: var(--Accent);
+}
+.icon {
+  line-height: 14px;
+  width: 56px;
+  height: 56px;
+  background: -webkit-linear-gradient(
+    -45deg,
+    var(--AccentDark) 0%,
+    var(--Accent) 50%,
+    var(--AccentLight) 100%
+  );
+  border-radius: 50%;
+}
+.icon > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 4px;
+  width: 48px;
+  height: 48px;
+  background-color: var(--Text);
+  border-radius: 50%;
+}
+.text {
+  margin: 0 16px 0 14px;
+}

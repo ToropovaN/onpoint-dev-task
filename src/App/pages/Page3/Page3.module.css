@@ -1,0 +1,194 @@
+.brendName {
+  position: relative;
+  z-index: 60;
+  margin: 191px 0 0 345px;
+  position: absolute;
+  font-family: "Gilroy-Regular";
+  font-size: 96px;
+  letter-spacing: 10.5px;
+  text-transform: uppercase;
+}
+
+.brendName > strong {
+  font-family: "Gilroy-Extrabold";
+}
+
+.content {
+  position: absolute;
+  bottom: 72px;
+  right: 61px;
+  left: 160px;
+  top: 123px;
+}
+
+.modal {
+  pointer-events: all;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 55;
+  transition: all 0.6s ease;
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.blockFood {
+  position: absolute;
+  left: 160px;
+  bottom: 124px;
+  right: 382px;
+  top: 380px;
+  padding: 47px 20px 47px 192px;
+}
+
+.blockPlan {
+  position: absolute;
+  bottom: 240px;
+  right: 79px;
+  left: 680px;
+  top: 380px;
+  padding: 47px 72px 47px 44px;
+}
+
+.infoBlockIcon {
+  position: absolute;
+  margin-left: -4px;
+  top: -33px;
+  width: 73px;
+  height: auto;
+}
+
+.blockButton {
+  position: absolute;
+  bottom: 124px;
+  right: 79px;
+}
+
+.bottleImg {
+  z-index: 60;
+  position: absolute;
+  bottom: 0;
+  left: 44px;
+  height: 694px;
+  width: 244px;
+}
+
+.particles {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+.particles > * {
+  position: absolute;
+  filter: brightness(1.2);
+}
+
+.particles > img:nth-child(1) {
+  z-index: 60;
+  transform: scale(0.4);
+  top: 186px;
+  left: 50px;
+  animation: particleAnim1 4s linear infinite;
+}
+.particles > img:nth-child(2) {
+  transform: scale(1.2) rotate(-70deg);
+  opacity: 0.5;
+  z-index: 60;
+  top: 326px;
+  left: 200px;
+  animation: particleAnim2 6.5s linear infinite;
+}
+.particles > img:nth-child(3) {
+  transform: scale(0.8);
+  opacity: 0.5;
+  z-index: 70;
+  bottom: 132px;
+  left: 14px;
+  animation: particleAnim3 6s linear infinite;
+}
+.particles > img:nth-child(4) {
+  transform: scale(0.7) rotate(40deg);
+  opacity: 0.8;
+  z-index: 70;
+  top: 140px;
+  left: 170px;
+  animation: particleAnim4 5s linear infinite;
+}
+.particles > img:nth-child(5) {
+  transform: scale(0.7) rotate(40deg);
+  opacity: 0.8;
+  z-index: 60;
+  bottom: 96px;
+  left: 224px;
+  animation: particleAnim4 7s linear infinite;
+}
+.particles > img:nth-child(6) {
+  transform: scale(0.4);
+  z-index: 100;
+  bottom: 250px;
+  left: -10px;
+  z-index: 49;
+  animation: particleAnim1 5s linear infinite;
+}
+.particles > img:nth-child(7) {
+  transform: scale(1.2) rotate(-70deg);
+  filter: brightness(1);
+  z-index: 100;
+  bottom: -55px;
+  left: 200px;
+  animation: particleAnim2 6s linear infinite;
+}
+.particles > img:nth-child(8) {
+  transform: scale(0.4);
+  top: 35px;
+  left: 165px;
+  animation: particleAnim1 5.5s linear infinite;
+}
+
+@keyframes particleAnim1 {
+  0% {
+    transform: translate(0, 0) scale(0.4);
+  }
+  50% {
+    transform: translate(-10%, -10%) scale(0.55) rotate(-20deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(0.4);
+  }
+}
+@keyframes particleAnim2 {
+  0% {
+    transform: translate(0, 0) scale(1.2) rotate(-70deg);
+  }
+  50% {
+    transform: translate(-15%, 5%) scale(0.9) rotate(-50deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(1.2) rotate(-70deg);
+  }
+}
+@keyframes particleAnim3 {
+  0% {
+    transform: translate(0, 0) scale(0.8);
+  }
+  50% {
+    transform: translate(-10%, -20%) scale(1) rotate(-20deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(0.8);
+  }
+}
+@keyframes particleAnim4 {
+  0% {
+    transform: translate(0, 0) scale(0.7) rotate(40deg);
+  }
+  50% {
+    transform: translate(30%, -30%) scale(0.8) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(0.7) rotate(40deg);
+  }
+}
